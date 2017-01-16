@@ -15,7 +15,7 @@
  */
 package org.springframework.samples.petclinic.model;
 
-import javax.per sistence.GeneratedValue;
+import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
@@ -27,7 +27,7 @@ import javax.persistence.MappedSuperclass;
  * @author Juergen Hoeller
  */
 @MappedSuperclass
-public class BaseEntity {
+public class BaseEntity { 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Integer id;
